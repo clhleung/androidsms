@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listArray">
+        <item>Angola</item>
+        <item>China</item>
+        <item>United States of America</item>
+    </string-array>
+
+    <string-array name="soundlistArray">
+        <item>Default</item>
+        <item>Silent</item>
+        <item>Bubbles</item>
+    </string-array>
+
+    <string-array name="groupArray">
+        <item>Send an SMS reply to all recipients and get individual replies (mass text)</item>
+        <item>Send an MMS reply to all recipients (group MMS)</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

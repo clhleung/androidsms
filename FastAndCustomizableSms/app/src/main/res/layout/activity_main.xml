@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beckoningtech.fastandcustomizablesms.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_activity_sms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/main_activity_sms_text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We need permission to read SMS to:"
+            android:textSize="@dimen/main_menu_activity_text_large_font_size"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/main_activity_sms_text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-send and receive text messages"
+            android:layout_below="@id/main_activity_sms_text_view1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_activity_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/main_activity_contact_text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We need permission to read contacts to:"
+            android:textSize="@dimen/main_menu_activity_text_large_font_size"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/main_activity_contact_text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-Display stored contact information"
+            android:layout_below="@id/main_activity_contact_text_view1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-Store new contacts and edit old one"
+            android:layout_below="@id/main_activity_contact_text_view2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_activity_storage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/main_activity_storage_text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We need permission to access storage to:"
+            android:textSize="@dimen/main_menu_activity_text_large_font_size"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/main_activity_storage_text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-Store SMS data"
+            android:layout_below="@id/main_activity_storage_text_view1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-Store MMS data"
+            android:layout_below="@id/main_activity_storage_text_view2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_activity_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/main_activity_location_text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We need permission to access location:"
+            android:textSize="@dimen/main_menu_activity_text_large_font_size"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/main_activity_location_text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-send your location in texts if requested"
+            android:layout_below="@id/main_activity_location_text_view1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note that we never store this information and we never send it in a text unless you explicitly ask to."
+            android:layout_below="@id/main_activity_location_text_view2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/main_activity_exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="EXIT"/>
+        <Button
+            android:id="@+id/main_activity_ask_permission"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="NEXT >"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:src="@drawable/ic_group_white_24dp"/>
+
+</RelativeLayout>

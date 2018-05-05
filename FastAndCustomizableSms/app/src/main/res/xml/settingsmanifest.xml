@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<PreferenceScreen-->
+        <!--android:key="button_voicemail_category_key"-->
+        <!--android:title="@string/voicemail"-->
+        <!--android:persistent="false">-->
+        <!--&lt;!&ndash; TODO: For Clement: Notification enabled preference should be a 2 state preference.&ndash;&gt;-->
+        <!--<CheckBoxPreference-->
+            <!--android:key="@string/notifications_enabled_pref_key"-->
+            <!--android:title="@string/notifications_enabled_pref_title"-->
+            <!--android:defaultValue="@bool/notifications_enabled_pref_default"-->
+            <!--android:persistent="true"-->
+            <!--android:disableDependentsState="false" />-->
+
+        <!--<RingtonePreference-->
+            <!--android:key="@string/notification_sound_pref_key"-->
+            <!--android:title="@string/notification_sound_pref_title"-->
+            <!--android:ringtoneType="notification"-->
+            <!--android:showSilent="true"-->
+            <!--android:showDefault="true"-->
+            <!--android:persistent="true"-->
+            <!--android:defaultValue=""-->
+            <!--android:dependency="@string/notifications_enabled_pref_key" />-->
+
+        <!--<CheckBoxPreference-->
+            <!--android:key="@string/notification_vibration_pref_key"-->
+            <!--android:title="@string/notification_vibrate_pref_title"-->
+            <!--android:defaultValue="@bool/notification_vibration_pref_default"-->
+            <!--android:persistent="true"-->
+            <!--android:dependency="@string/notifications_enabled_pref_key" />-->
+
+    <!--</PreferenceScreen>-->
+    <PreferenceScreen
+        android:id="@+id/defaultsms"
+        android:key="default_sms"
+        android:title="Default SMS app"
+        android:defaultValue="false"
+        android:persistent="false">
+    </PreferenceScreen>
+
+    <PreferenceCategory
+        android:title="Text"
+        android:key="pref_key_storage_settings">
+
+        <EditTextPreference
+            android:defaultValue="160"
+            android:key="text_char_limit"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Adjust max characters in a SMS message."
+            android:title="Text message character limit" />
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory
+        android:title="Notifications"
+        android:key="text_notifications">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="all_notification_switch"
+            android:title="Notifications" />
+
+        <ListPreference android:title="Notification sound"
+
+            android:key="notifSound"
+            android:defaultValue="1"
+            android:entries="@array/soundlistArray"
+            android:entryValues="@array/listValues" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="outgoing_switch"
+            android:title="Hear outgoing message sounds" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="vibrate_switch"
+            android:title="Vibrate" />
+    </PreferenceCategory>
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="location_switch"
+            android:summary="Allow app to access your location. "
+            android:title="Location" />
+
+    <ListPreference android:title="Your current country"
+        android:key="downloadType"
+        android:defaultValue="1"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues" />
+
+
+    <PreferenceScreen
+        android:key="button_voicemail_category_key"
+        android:title="Voicemail"
+        android:persistent="false">
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="location_switch"
+            android:summary="Allow app to access your location. "
+            android:title="Location" />
+    </PreferenceScreen>
+
+    <ListPreference
+        android:title="Group messaging"
+        android:key="group_msg"
+        android:defaultValue="1"
+        android:entries="@array/groupArray"
+        android:entryValues="@array/listValues" />
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="MMS_auto_download"
+        android:title="Auto download MMS" />
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="MMS_roaming"
+        android:title="Auto download MMS when roaming" />
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="simple_char"
+        android:title="Use simple characters" />
+
+    <android.support.v7.preference.SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="service_message"
+        android:summary="Receive service messages "
+        android:title="Service messages" />
+
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="phone_number"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Phone number" />
+
+
+
+</PreferenceScreen>

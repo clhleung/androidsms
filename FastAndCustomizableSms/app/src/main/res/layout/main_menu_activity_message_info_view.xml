@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        >
+        <ImageView
+		    android:id="@+id/main_menu_activity_message_info_contact_image"
+		    android:layout_width="70dp"
+		    android:layout_height="50dp"
+		    android:paddingStart="13dp"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp"
+		    android:paddingEnd="17dp"
+		    android:src="@mipmap/ic_launcher"
+		    android:contentDescription="@string/dl_failure_notification"
+		    android:scaleType="fitXY"/>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_weight = "1"
+            >
+        <TextView
+            android:id="@+id/main_menu_activity_message_info_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/main_menu_activity_text_large_font_size"
+            android:paddingBottom="1dp"
+            android:paddingEnd="17dp"
+            android:paddingStart="0dp"
+            />
+        <TextView
+            android:id="@+id/main_menu_activity_message_info_contact_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/main_menu_activity_text_default_font_size"
+            android:paddingEnd="17dp"
+            android:paddingStart="0dp"
+             />
+        <TextView
+            android:id="@+id/main_menu_activity_message_info_contact_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="@dimen/main_menu_activity_text_default_font_size"
+                android:paddingTop="1dp"
+                android:paddingEnd="17dp"
+                android:paddingStart="0dp"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/main_menu_activity_message_info_mms_image"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:paddingStart="13dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="17dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/dl_failure_notification"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+</LinearLayout>

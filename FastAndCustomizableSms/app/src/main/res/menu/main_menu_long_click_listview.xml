@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/main_menu_long_click_settings"
+        android:title="Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <item android:id="@+id/main_menu_long_click_edit_contacts"
+        android:title="Edit Contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </item>
+</menu>

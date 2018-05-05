@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/new_conversation_activity_relative_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beckoningtech.fastandcustomizablesms.NewConversationActivity"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="8dp"
+    tools:layout_editor_absoluteX="8dp">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_conversation_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.ActionBarColors"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_conversation_activity_horizontal_linear_layout"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingStart="13dp"
+        android:paddingEnd="13dp">
+        <com.android.ex.chips.RecipientEditTextView
+            android:id="@+id/new_conversation_activity_recipient_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_conversation_search_hint"
+            android:minHeight="58dp"
+            android:layout_weight=".8"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/new_conversation_activity_start_button"
+            android:src="@android:drawable/ic_menu_send"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:layout_weight=".2"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/new_conversation_activity_recycler_view"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_conversation_activity_horizontal_linear_layout"
+        android:paddingTop="@dimen/default_gap"
+        />
+</RelativeLayout>

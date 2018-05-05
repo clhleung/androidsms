@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/messages_activity_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+    <ImageView
+        android:id="@+id/messages_activity_contact_image_view"
+        android:layout_width="@dimen/messages_activity_text_default_image_size"
+        android:layout_height="@dimen/messages_activity_text_default_image_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messages_activity_wrapper2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messages_activity_wrapper3"
+            android:orientation="vertical">
+                <TextView
+                    android:id="@+id/messages_activity_message_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bubble_yellow"
+                    android:paddingStart="10dip"
+                    android:paddingEnd="10dip"
+                    android:textSize="@dimen/messages_activity_text_default_font_size"
+                    android:textColor="@android:color/primary_text_light" />
+                <!--<ImageView-->
+                    <!--android:id="@+id/messages_activity_mms"-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:background="@drawable/bubble_yellow"-->
+                    <!--android:paddingStart="13dp"-->
+                    <!--android:paddingTop="5dp"-->
+                    <!--android:paddingBottom="5dp"-->
+                    <!--android:paddingEnd="17dp"-->
+                    <!--android:src="@mipmap/ic_launcher"-->
+                    <!--android:contentDescription="@string/dl_failure_notification"-->
+                    <!--android:scaleType="fitXY"/>-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/messages_activity_message_time_stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:paddingStart="10dip"
+        android:paddingEnd="10dip"
+        android:textSize="@dimen/messages_activity_time_stamp_default_font_size"
+        android:textColor="@android:color/primary_text_light" />
+
+</RelativeLayout>

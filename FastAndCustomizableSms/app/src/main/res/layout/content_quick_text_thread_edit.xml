@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.beckoningtech.fastandcustomizablesms.QuickTextThreadEditActivity"
+    tools:showIn="@layout/activity_quick_text_thread_edit"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/quick_text_thread_edit_activity_scroll_view">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quick_text_thread_edit_activity_vertical_container">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/quick_text_pref_title_string"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/quickTextTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/quick_text_pref_title_hint"
+                android:textColorLink="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/send_to"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="@string/quick_text_pref_recipients"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/recipientNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter the phone number of the recipient here."
+                android:inputType="number"
+                android:textColorLink="@android:color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/recipientNumber2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter the name of the recipient"
+                android:inputType="textMultiLine"
+                android:textColorLink="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/quick_text_pref_include_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:text="@string/quick_text_pref_include_string"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:text="@string/quick_text_pref_show_date_string"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/quick_text_pref_show_date_check_box"
+                android:layout_weight="0.20" />
+
+            <CheckBox
+                android:id="@+id/sendOnPress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                android:text="@string/sendOnPress" />
+
+            <CheckBox
+                android:id="@+id/showLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                android:text="@string/quick_text_pref_show_location_string" />
+
+            <TextView
+                android:id="@+id/quick_text_pref_message_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/quick_text_pref_message_string"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/messageContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/quick_text_pref_message_hint"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v4.widget.NestedScrollView>
